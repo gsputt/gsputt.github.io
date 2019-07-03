@@ -1,0 +1,930 @@
+<!DOCTYPE html!>
+<html>
+  <head>
+    <title>The Spell Scribe cards</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+  </head>
+  <body>
+    <h1>The Spell Scribe cards</h1>
+    <table class="sortable">
+  <tr>
+    <th>Name</th>
+    <th>Image</th>
+    <th>Upgraded image</th>
+    <th>Rarity</th>
+    <th>Type</th>
+    <th>Cost</th>
+    <th>Description</th>
+  </tr>
+  
+  <tr>
+    <td>Defend</td>
+    <td><a href="card-images/Defend.png"><img src="small-card-images/Defend.png" height="298"></a></td>
+    <td><a href="card-images/DefendPlus.png"><img src="small-card-images/DefendPlus.png" height="298"></a></td>
+    <td>Basic</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Gain 5(8) Block.</td>
+  </tr>
+  
+  <tr>
+    <td>Detailed Annotation</td>
+    <td><a href="card-images/DetailedAnnotation.png"><img src="small-card-images/DetailedAnnotation.png" height="298"></a></td>
+    <td><a href="card-images/DetailedAnnotationPlus.png"><img src="small-card-images/DetailedAnnotationPlus.png" height="298"></a></td>
+    <td>Basic</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>scribe:Spell_Modifier: Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness.</td>
+  </tr>
+  
+  <tr>
+    <td>Icy Defend</td>
+    <td><a href="card-images/IcyDefend.png"><img src="small-card-images/IcyDefend.png" height="298"></a></td>
+    <td><a href="card-images/IcyDefendPlus.png"><img src="small-card-images/IcyDefendPlus.png" height="298"></a></td>
+    <td>Basic</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>scribe:Spell_Effect: Gain 5(8) Block.</td>
+  </tr>
+  
+  <tr>
+    <td>Lightning Strike</td>
+    <td><a href="card-images/LightningStrike.png"><img src="small-card-images/LightningStrike.png" height="298"></a></td>
+    <td><a href="card-images/LightningStrikePlus.png"><img src="small-card-images/LightningStrikePlus.png" height="298"></a></td>
+    <td>Basic</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>scribe:Spell_Effect: Deal !BETTERSPELLATTACK! Damage.</td>
+  </tr>
+  
+  <tr>
+    <td>Strike</td>
+    <td><a href="card-images/Strike.png"><img src="small-card-images/Strike.png" height="298"></a></td>
+    <td><a href="card-images/StrikePlus.png"><img src="small-card-images/StrikePlus.png" height="298"></a></td>
+    <td>Basic</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 6(9) damage.</td>
+  </tr>
+  
+  <tr>
+    <td>Scribed Spell</td>
+    <td><a href="card-images/ScribedSpell.png"><img src="small-card-images/ScribedSpell.png" height="298"></a></td>
+    <td><a href="card-images/ScribedSpellPlus.png"><img src="small-card-images/ScribedSpellPlus.png" height="298"></a></td>
+    <td>Special</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>scribe:Cast, Purge, scribe:Spectral.</td>
+  </tr>
+  
+  <tr>
+    <td>Amp Spellstone</td>
+    <td><a href="card-images/AmpSpellstone.png"><img src="small-card-images/AmpSpellstone.png" height="298"></a></td>
+    <td><a href="card-images/AmpSpellstonePlus.png"><img src="small-card-images/AmpSpellstonePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Exhaustive !stslib:ex!.
+When this card is Exhausted, gain
+scribe:Spell_Modifier: !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness.</td>
+  </tr>
+  
+  <tr>
+    <td>Arcane Barrier</td>
+    <td><a href="card-images/ArcaneBarrier.png"><img src="small-card-images/ArcaneBarrier.png" height="298"></a></td>
+    <td><a href="card-images/ArcaneBarrierPlus.png"><img src="small-card-images/ArcaneBarrierPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>scribe:Spell_Effect:
+Gain 14(19) Block.
+scribe:Spell_Modifier:
+[#fa0000]Lose[] 25% scribe:Spell_Effectiveness.</td>
+  </tr>
+  
+  <tr>
+    <td>Blunt Weapons</td>
+    <td><a href="card-images/BluntWeapons.png"><img src="small-card-images/BluntWeapons.png" height="298"></a></td>
+    <td><a href="card-images/BluntWeaponsPlus.png"><img src="small-card-images/BluntWeaponsPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>scribe:Spell_Effect:
+Apply 1(2) Weak.</td>
+  </tr>
+  
+  <tr>
+    <td>Divination</td>
+    <td><a href="card-images/Divination.png"><img src="small-card-images/Divination.png" height="298"></a></td>
+    <td><a href="card-images/DivinationPlus.png"><img src="small-card-images/DivinationPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>Look at the top 2(3) cards of your deck. Put 1 into your hand, Exhaust the other(s).</td>
+  </tr>
+  
+  <tr>
+    <td>Enchanted Strike</td>
+    <td><a href="card-images/EnchantedStrike.png"><img src="small-card-images/EnchantedStrike.png" height="298"></a></td>
+    <td><a href="card-images/EnchantedStrikePlus.png"><img src="small-card-images/EnchantedStrikePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Affected by scribe:Spell_Modifiers.
+Deal 7(11) damage. </td>
+  </tr>
+  
+  <tr>
+    <td>Focusing Blow</td>
+    <td><a href="card-images/FocusingBlow.png"><img src="small-card-images/FocusingBlow.png" height="298"></a></td>
+    <td><a href="card-images/FocusingBlowPlus.png"><img src="small-card-images/FocusingBlowPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 7(11) damage.
+Gain 1 scribe:Drained.
+scribe:Spell_Modifier:
+Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness.</td>
+  </tr>
+  
+  <tr>
+    <td>Freeze</td>
+    <td><a href="card-images/Freeze.png"><img src="small-card-images/Freeze.png" height="298"></a></td>
+    <td><a href="card-images/FreezePlus.png"><img src="small-card-images/FreezePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>(Apply 1 Weak to ALL enemies.)
+ scribe:Spell_Effect:
+Gain !BETTERSPELLBLOCK! Block.</td>
+  </tr>
+  
+  <tr>
+    <td>Frostvenom Toxin</td>
+    <td><a href="card-images/FrostvenomToxin.png"><img src="small-card-images/FrostvenomToxin.png" height="298"></a></td>
+    <td><a href="card-images/FrostvenomToxinPlus.png"><img src="small-card-images/FrostvenomToxinPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Gain 5(7) Block. scribe:Spell_Effect: Apply 3(4) Poison.</td>
+  </tr>
+  
+  <tr>
+    <td>Gather Components</td>
+    <td><a href="card-images/GatherComponents.png"><img src="small-card-images/GatherComponents.png" height="298"></a></td>
+    <td><a href="card-images/GatherComponentsPlus.png"><img src="small-card-images/GatherComponentsPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Exhaust a random (not random)card in your hand. Gain scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage if it was an attack, otherwise, gain scribe:Spell_Effect: Gain !BETTERSPELLBLOCK! Block.</td>
+  </tr>
+  
+  <tr>
+    <td>Incendio</td>
+    <td><a href="card-images/Incendio.png"><img src="small-card-images/Incendio.png" height="298"></a></td>
+    <td><a href="card-images/IncendioPlus.png"><img src="small-card-images/IncendioPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>2</td>
+    <td>Costs 1 [E] if you are scribe:Drained.
+Deal 22(28) damage. Gain !BETTERDRAINED! scribe:Drained.</td>
+  </tr>
+  
+  <tr>
+    <td>Invigorating Strike</td>
+    <td><a href="card-images/InvigoratingStrike.png"><img src="small-card-images/InvigoratingStrike.png" height="298"></a></td>
+    <td><a href="card-images/InvigoratingStrikePlus.png"><img src="small-card-images/InvigoratingStrikePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 8(11) damage. If you are scribe:Drained, gain scribe:Spell_Effect: gain [E].</td>
+  </tr>
+  
+  <tr>
+    <td>Lightning Bolt</td>
+    <td><a href="card-images/LightningBolt.png"><img src="small-card-images/LightningBolt.png" height="298"></a></td>
+    <td><a href="card-images/LightningBoltPlus.png"><img src="small-card-images/LightningBoltPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 6(9) damage to ALL enemies.
+scribe:Spell_Effect:
+Deal 5 damage.</td>
+  </tr>
+  
+  <tr>
+    <td>Magic Missiles</td>
+    <td><a href="card-images/MagicMissiles.png"><img src="small-card-images/MagicMissiles.png" height="298"></a></td>
+    <td><a href="card-images/MagicMissilesPlus.png"><img src="small-card-images/MagicMissilesPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 3(5) damage 2 times.
+Increase the number of hits for each unique scribe:Spell_Effect and scribe:Spell_Modifier.
+(Hits 2 Times.)</td>
+  </tr>
+  
+  <tr>
+    <td>Mirror Image</td>
+    <td><a href="card-images/MirrorImage.png"><img src="small-card-images/MirrorImage.png" height="298"></a></td>
+    <td><a href="card-images/MirrorImagePlus.png"><img src="small-card-images/MirrorImagePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Gain 4(6) Block.
+scribe:Spell_Effect:
+Gain 4(6) Block.</td>
+  </tr>
+  
+  <tr>
+    <td>Overcharge</td>
+    <td><a href="card-images/Overcharge.png"><img src="small-card-images/Overcharge.png" height="298"></a></td>
+    <td><a href="card-images/OverchargePlus.png"><img src="small-card-images/OverchargePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>scribe:Spell_Effect:
+Deal 13(18) damage to an enemy, and !OverchargeVariable! to yourself.</td>
+  </tr>
+  
+  <tr>
+    <td>Reckless Response</td>
+    <td><a href="card-images/RecklessResponse.png"><img src="small-card-images/RecklessResponse.png" height="298"></a></td>
+    <td><a href="card-images/RecklessResponsePlus.png"><img src="small-card-images/RecklessResponsePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>Apply 2 Vulnerable to ALL enemies.
+scribe:Spell_Effect: Deal !BETTERSELFDAMAGE! damage to yourself.</td>
+  </tr>
+  
+  <tr>
+    <td>Storm Savvy</td>
+    <td><a href="card-images/StormSavvy.png"><img src="small-card-images/StormSavvy.png" height="298"></a></td>
+    <td><a href="card-images/StormSavvyPlus.png"><img src="small-card-images/StormSavvyPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Draw a (1(2)) card(s).
+scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage.</td>
+  </tr>
+  
+  <tr>
+    <td>Telum Spellstone</td>
+    <td><a href="card-images/TelumSpellstone.png"><img src="small-card-images/TelumSpellstone.png" height="298"></a></td>
+    <td><a href="card-images/TelumSpellstonePlus.png"><img src="small-card-images/TelumSpellstonePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Exhaustive !stslib:ex!.
+When this card is Exhausted, gain
+scribe:Spell_Effect: deal !BETTERSPELLATTACK! damage.</td>
+  </tr>
+  
+  <tr>
+    <td>Thrown Scroll</td>
+    <td><a href="card-images/ThrownScroll.png"><img src="small-card-images/ThrownScroll.png" height="298"></a></td>
+    <td><a href="card-images/ThrownScrollPlus.png"><img src="small-card-images/ThrownScrollPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>0</td>
+    <td>Deal 4 Damage. Remove ALL your scribe:Spell_Effects and scribe:Spell_Modifiers. Deals 1 additional damage for each 3(2) stacks removed.</td>
+  </tr>
+  
+  <tr>
+    <td>Toxic Spellstone</td>
+    <td><a href="card-images/ToxicSpellstone.png"><img src="small-card-images/ToxicSpellstone.png" height="298"></a></td>
+    <td><a href="card-images/ToxicSpellstonePlus.png"><img src="small-card-images/ToxicSpellstonePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Exhaustive !stslib:ex!.
+When this card is Exhausted, gain
+scribe:Spell_Effect: Apply 11(14) Poison.</td>
+  </tr>
+  
+  <tr>
+    <td>Arcane Arcing</td>
+    <td><a href="card-images/ArcaneArcing.png"><img src="small-card-images/ArcaneArcing.png" height="298"></a></td>
+    <td><a href="card-images/ArcaneArcingPlus.png"><img src="small-card-images/ArcaneArcingPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>X</td>
+    <td>Gain X times:
+scribe:Spell_Effect: Deal !BETTERSPELLATTACK! Damage.</td>
+  </tr>
+  
+  <tr>
+    <td>Barrier Of Light</td>
+    <td><a href="card-images/BarrierOfLight.png"><img src="small-card-images/BarrierOfLight.png" height="298"></a></td>
+    <td><a href="card-images/BarrierOfLightPlus.png"><img src="small-card-images/BarrierOfLightPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>4(3)</td>
+    <td>Costs 1 less [E] for each 25% of health missing.
+Gain 1 Block for each 3 Max HP.
+(Gain 0 Block.)</td>
+  </tr>
+  
+  <tr>
+    <td>Blank Scroll</td>
+    <td><a href="card-images/BlankScroll.png"><img src="small-card-images/BlankScroll.png" height="298"></a></td>
+    <td><a href="card-images/BlankScrollPlus.png"><img src="small-card-images/BlankScrollPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>1</td>
+    <td>(Innate.)
+ Your spell now starts with " scribe:Spell_Modifier: Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness. "</td>
+  </tr>
+  
+  <tr>
+    <td>Capacitance Scroll</td>
+    <td><a href="card-images/CapacitanceScroll.png"><img src="small-card-images/CapacitanceScroll.png" height="298"></a></td>
+    <td><a href="card-images/CapacitanceScrollPlus.png"><img src="small-card-images/CapacitanceScrollPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>1</td>
+    <td>Your spell now starts with " scribe:Spell_Effect: Deal 3(6) damage."</td>
+  </tr>
+  
+  <tr>
+    <td>Clarity</td>
+    <td><a href="card-images/Clarity.png"><img src="small-card-images/Clarity.png" height="298"></a></td>
+    <td><a href="card-images/ClarityPlus.png"><img src="small-card-images/ClarityPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>scribe:Spell_Effect:
+Gain 1(2) [E].</td>
+  </tr>
+  
+  <tr>
+    <td>Crippling Charge</td>
+    <td><a href="card-images/CripplingCharge.png"><img src="small-card-images/CripplingCharge.png" height="298"></a></td>
+    <td><a href="card-images/CripplingChargePlus.png"><img src="small-card-images/CripplingChargePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage.
+scribe:Spell_Modifier: [#fa0000]Lose[] !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness.</td>
+  </tr>
+  
+  <tr>
+    <td>Crystal Shield</td>
+    <td><a href="card-images/CrystalShield.png"><img src="small-card-images/CrystalShield.png" height="298"></a></td>
+    <td><a href="card-images/CrystalShieldPlus.png"><img src="small-card-images/CrystalShieldPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>X</td>
+    <td>Gain 7(9) Block and 2(3) Thorns X Times. Lose the gained Thorns at the start of your turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Eldritch</td>
+    <td><a href="card-images/Eldritch.png"><img src="small-card-images/Eldritch.png" height="298"></a></td>
+    <td><a href="card-images/EldritchPlus.png"><img src="small-card-images/EldritchPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>2(1)</td>
+    <td>scribe:Spell_Effect:
+Apply 5 Poison and 2 Weak.</td>
+  </tr>
+  
+  <tr>
+    <td>False Life</td>
+    <td><a href="card-images/FalseLife.png"><img src="small-card-images/FalseLife.png" height="298"></a></td>
+    <td><a href="card-images/FalseLifePlus.png"><img src="small-card-images/FalseLifePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1(0)</td>
+    <td>Block is gained as Temporary_HP this turn.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Flow Like Water</td>
+    <td><a href="card-images/FlowLikeWater.png"><img src="small-card-images/FlowLikeWater.png" height="298"></a></td>
+    <td><a href="card-images/FlowLikeWaterPlus.png"><img src="small-card-images/FlowLikeWaterPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>1</td>
+    <td>When you play this, and at the start of your turn, if you are scribe:Drained, gain 3(5) Dexterity until end of turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Focused</td>
+    <td><a href="card-images/Focused.png"><img src="small-card-images/Focused.png" height="298"></a></td>
+    <td><a href="card-images/FocusedPlus.png"><img src="small-card-images/FocusedPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Gain 5 Block.
+scribe:Spell_Modifier:
+Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness.</td>
+  </tr>
+  
+  <tr>
+    <td>Focusing Barrier</td>
+    <td><a href="card-images/FocusingBarrier.png"><img src="small-card-images/FocusingBarrier.png" height="298"></a></td>
+    <td><a href="card-images/FocusingBarrierPlus.png"><img src="small-card-images/FocusingBarrierPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>scribe:Spell_Effect: Gain 10(16) Block.
+scribe:Spell_Modifier: Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness.</td>
+  </tr>
+  
+  <tr>
+    <td>Frantic Search</td>
+    <td><a href="card-images/FranticSearch.png"><img src="small-card-images/FranticSearch.png" height="298"></a></td>
+    <td><a href="card-images/FranticSearchPlus.png"><img src="small-card-images/FranticSearchPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>Draw 15(10) cards. Any that don't fit in your hand are Exhausted.</td>
+  </tr>
+  
+  <tr>
+    <td>Glacies Spellstone</td>
+    <td><a href="card-images/GlaciesSpellstone.png"><img src="small-card-images/GlaciesSpellstone.png" height="298"></a></td>
+    <td><a href="card-images/GlaciesSpellstonePlus.png"><img src="small-card-images/GlaciesSpellstonePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Gain 10(13) Block.
+Exhaustive !stslib:ex!
+When this card is Exhausted, gain 10(13) Block.</td>
+  </tr>
+  
+  <tr>
+    <td>Hemorrhage</td>
+    <td><a href="card-images/Hemorrhage.png"><img src="small-card-images/Hemorrhage.png" height="298"></a></td>
+    <td><a href="card-images/HemorrhagePlus.png"><img src="small-card-images/HemorrhagePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>2</td>
+    <td>Deal 10(15) damage.
+Stun target enemy for 1 turn.
+Gain 2 scribe:Drained.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Icicle Blast</td>
+    <td><a href="card-images/IcicleBlast.png"><img src="small-card-images/IcicleBlast.png" height="298"></a></td>
+    <td><a href="card-images/IcicleBlastPlus.png"><img src="small-card-images/IcicleBlastPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Gain Thorns equal to half (not half)your block.
+Lose the gained Thorns at the start of your turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Insight</td>
+    <td><a href="card-images/Insight.png"><img src="small-card-images/Insight.png" height="298"></a></td>
+    <td><a href="card-images/InsightPlus.png"><img src="small-card-images/InsightPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>Draw 2 cards, Exhaust (not, Exhaust).</td>
+  </tr>
+  
+  <tr>
+    <td>Lightning Blade</td>
+    <td><a href="card-images/LightningBlade.png"><img src="small-card-images/LightningBlade.png" height="298"></a></td>
+    <td><a href="card-images/LightningBladePlus.png"><img src="small-card-images/LightningBladePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 5 damage. Deals additional damage equal to amount of scribe:Thunder.
+(Draw a card.)
+ (Deal 5 damage.)</td>
+  </tr>
+  
+  <tr>
+    <td>Liquidum Scroll</td>
+    <td><a href="card-images/LiquidumScroll.png"><img src="small-card-images/LiquidumScroll.png" height="298"></a></td>
+    <td><a href="card-images/LiquidumScrollPlus.png"><img src="small-card-images/LiquidumScrollPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>1</td>
+    <td>(Innate.)
+ While scribe:Drained, draw an additional card at the start of your turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Meditate</td>
+    <td><a href="card-images/Meditate.png"><img src="small-card-images/Meditate.png" height="298"></a></td>
+    <td><a href="card-images/MeditatePlus.png"><img src="small-card-images/MeditatePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>Remove all Debuffs.
+Exhaust. (not
+Exhaust.)</td>
+  </tr>
+  
+  <tr>
+    <td>Piercing Bolts</td>
+    <td><a href="card-images/PiercingBolts.png"><img src="small-card-images/PiercingBolts.png" height="298"></a></td>
+    <td><a href="card-images/PiercingBoltsPlus.png"><img src="small-card-images/PiercingBoltsPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>scribe:Spell_Effect: Deal 6 damage.
+scribe:Spell_Modifier: Your (your) scribe:Thunder deals double (2.5 times) damage when hitting an enemy with Block.
+Stacks diminishingly. (not.)</td>
+  </tr>
+  
+  <tr>
+    <td>Price of Knowledge</td>
+    <td><a href="card-images/PriceofKnowledge.png"><img src="small-card-images/PriceofKnowledge.png" height="298"></a></td>
+    <td><a href="card-images/PriceofKnowledgePlus.png"><img src="small-card-images/PriceofKnowledgePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>This card costs 5(2) gold to play.
+Add a (an upgraded) "Price of Knowledge" to your hand.
+Purge.
+Draw 1 Card.</td>
+  </tr>
+  
+  <tr>
+    <td>Quick Study</td>
+    <td><a href="card-images/QuickStudy.png"><img src="small-card-images/QuickStudy.png" height="298"></a></td>
+    <td><a href="card-images/QuickStudyPlus.png"><img src="small-card-images/QuickStudyPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1(0)</td>
+    <td>Add an scribe:Echo of a random card in your deck to your hand. It costs 0. Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Ritual of Sacrifice</td>
+    <td><a href="card-images/RitualofSacrifice.png"><img src="small-card-images/RitualofSacrifice.png" height="298"></a></td>
+    <td><a href="card-images/RitualofSacrificePlus.png"><img src="small-card-images/RitualofSacrificePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 7(9) damage.
+If this kills an enemy, heal for 25% of the slain enemy's Max HP.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Sanguine Surge</td>
+    <td><a href="card-images/SanguineSurge.png"><img src="small-card-images/SanguineSurge.png" height="298"></a></td>
+    <td><a href="card-images/SanguineSurgePlus.png"><img src="small-card-images/SanguineSurgePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Add a (an upgraded) "Sanguine Surge" to your hand.
+Purge.
+scribe:Spell_Effect: Deal 10(13) damage to an enemy and !BETTERSELFDAMAGE! to yourself.</td>
+  </tr>
+  
+  <tr>
+    <td>Scindo Spellstone</td>
+    <td><a href="card-images/ScindoSpellstone.png"><img src="small-card-images/ScindoSpellstone.png" height="298"></a></td>
+    <td><a href="card-images/ScindoSpellstonePlus.png"><img src="small-card-images/ScindoSpellstonePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Exhaustive !stslib:ex!.
+Gain !BETTERDRAINED! scribe:Drained.
+When this card is Exhausted, gain
+scribe:Spell_Modifier: !BETTERSPLIT! scribe:Additional_Casts.</td>
+  </tr>
+  
+  <tr>
+    <td>Scroll Of Poison</td>
+    <td><a href="card-images/ScrollOfPoison.png"><img src="small-card-images/ScrollOfPoison.png" height="298"></a></td>
+    <td><a href="card-images/ScrollOfPoisonPlus.png"><img src="small-card-images/ScrollOfPoisonPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>2(1)</td>
+    <td>Whenever you take damage on your turn, apply that much Poison to ALL enemies.</td>
+  </tr>
+  
+  <tr>
+    <td>Scroll of Scrying</td>
+    <td><a href="card-images/ScrollofScrying.png"><img src="small-card-images/ScrollofScrying.png" height="298"></a></td>
+    <td><a href="card-images/ScrollofScryingPlus.png"><img src="small-card-images/ScrollofScryingPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>1</td>
+    <td>Gain !BETTERDRAINED! scribe:Drained. At the end of your turn, you may place a card from your hand on top of your draw pile. The first card you draw each turn costs 1 less.</td>
+  </tr>
+  
+  <tr>
+    <td>Scroll of Shadows</td>
+    <td><a href="card-images/ScrollofShadows.png"><img src="small-card-images/ScrollofShadows.png" height="298"></a></td>
+    <td><a href="card-images/ScrollofShadowsPlus.png"><img src="small-card-images/ScrollofShadowsPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>3(2)</td>
+    <td>Whenever you play the first card each turn, if it is a power, add an scribe:Echo of it to your hand. It costs 1 less.</td>
+  </tr>
+  
+  <tr>
+    <td>Split</td>
+    <td><a href="card-images/Split.png"><img src="small-card-images/Split.png" height="298"></a></td>
+    <td><a href="card-images/SplitPlus.png"><img src="small-card-images/SplitPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>scribe:Spell_Modifier:
+[#fa0000]Lose[] 50% scribe:Spell_Effectiveness,
+gain 1(2) scribe:Additional_Cast(s).</td>
+  </tr>
+  
+  <tr>
+    <td>Static Cage</td>
+    <td><a href="card-images/StaticCage.png"><img src="small-card-images/StaticCage.png" height="298"></a></td>
+    <td><a href="card-images/StaticCagePlus.png"><img src="small-card-images/StaticCagePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>2</td>
+    <td>Gain 11(16) Block.
+scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage.</td>
+  </tr>
+  
+  <tr>
+    <td>Static Series</td>
+    <td><a href="card-images/StaticSeries.png"><img src="small-card-images/StaticSeries.png" height="298"></a></td>
+    <td><a href="card-images/StaticSeriesPlus.png"><img src="small-card-images/StaticSeriesPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage.
+scribe:Spell_Modifier: Your spells now target 1 additional enemy.
+Cannot target the same enemy more than once.</td>
+  </tr>
+  
+  <tr>
+    <td>Weird Blast</td>
+    <td><a href="card-images/WeirdBlast.png"><img src="small-card-images/WeirdBlast.png" height="298"></a></td>
+    <td><a href="card-images/WeirdBlastPlus.png"><img src="small-card-images/WeirdBlastPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>0</td>
+    <td>(Draw a card.)
+ Gain !BETTERDRAINED! scribe:Drained.
+scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage.</td>
+  </tr>
+  
+  <tr>
+    <td>Weird Shield</td>
+    <td><a href="card-images/WeirdShield.png"><img src="small-card-images/WeirdShield.png" height="298"></a></td>
+    <td><a href="card-images/WeirdShieldPlus.png"><img src="small-card-images/WeirdShieldPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>(Draw a card.)
+ Gain 8 Block.
+scribe:Spell_Effect: Deal !BETTERSELFDAMAGE! damage to yourself.</td>
+  </tr>
+  
+  <tr>
+    <td>Weird Toxin</td>
+    <td><a href="card-images/WeirdToxin.png"><img src="small-card-images/WeirdToxin.png" height="298"></a></td>
+    <td><a href="card-images/WeirdToxinPlus.png"><img src="small-card-images/WeirdToxinPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>(Draw a card.)
+ Gain !SCRIBEM2! Weak and !SCRIBEM2! Frail.
+scribe:Spell_Effect: Apply 6 Poison.</td>
+  </tr>
+  
+  <tr>
+    <td>Words of Power</td>
+    <td><a href="card-images/WordsofPower.png"><img src="small-card-images/WordsofPower.png" height="298"></a></td>
+    <td><a href="card-images/WordsofPowerPlus.png"><img src="small-card-images/WordsofPowerPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>1</td>
+    <td>Whenever you (gain or) lose a buff, deal 3 damage to a random enemy.</td>
+  </tr>
+  
+  <tr>
+    <td>Absolute Zero</td>
+    <td><a href="card-images/AbsoluteZero.png"><img src="small-card-images/AbsoluteZero.png" height="298"></a></td>
+    <td><a href="card-images/AbsoluteZeroPlus.png"><img src="small-card-images/AbsoluteZeroPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>3</td>
+    <td>Give ALL enemies 50(30) Block.
+After this turn, start another turn.
+Your Hand, Block and Energy are Retained.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Anomalous Texts</td>
+    <td><a href="card-images/AnomalousTexts.png"><img src="small-card-images/AnomalousTexts.png" height="298"></a></td>
+    <td><a href="card-images/AnomalousTextsPlus.png"><img src="small-card-images/AnomalousTextsPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Lose all negative scribe:Spell_Effectiveness and all scribe:Additional_Casts.
+Gain 25% scribe:Spell_Effectiveness for each !SPELLEFFECTIVENESS!% lost, and !ANOMALOUSTEXTSVARIABLE!% scribe:Spell_Effectiveness for each scribe:Additional_Cast lost.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Blood Magicks</td>
+    <td><a href="card-images/BloodMagicks.png"><img src="small-card-images/BloodMagicks.png" height="298"></a></td>
+    <td><a href="card-images/BloodMagicksPlus.png"><img src="small-card-images/BloodMagicksPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>3(2)</td>
+    <td>Whenever you take damage on your turn, draw a card and gain 1 [E].</td>
+  </tr>
+  
+  <tr>
+    <td>Catalytic Catastrophe</td>
+    <td><a href="card-images/CatalyticCatastrophe.png"><img src="small-card-images/CatalyticCatastrophe.png" height="298"></a></td>
+    <td><a href="card-images/CatalyticCatastrophePlus.png"><img src="small-card-images/CatalyticCatastrophePlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Apply 3(5) Poison. Deal the sum of damage that half the Poison will deal.
+(Deal !SCRIBEM2! damage)</td>
+  </tr>
+  
+  <tr>
+    <td>Conflagrate</td>
+    <td><a href="card-images/Conflagrate.png"><img src="small-card-images/Conflagrate.png" height="298"></a></td>
+    <td><a href="card-images/ConflagratePlus.png"><img src="small-card-images/ConflagratePlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Attack</td>
+    <td>3</td>
+    <td>Deal 35(50) damage to the closest enemy. If this kills any enemy, it deals double of any excess damage to the one behind it.</td>
+  </tr>
+  
+  <tr>
+    <td>Deluge</td>
+    <td><a href="card-images/Deluge.png"><img src="small-card-images/Deluge.png" height="298"></a></td>
+    <td><a href="card-images/DelugePlus.png"><img src="small-card-images/DelugePlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>2</td>
+    <td>Whenever you play the first (two) card(s) each turn, if you are scribe:Drained, add an scribe:Echo of a random card from your deck that costs less than or equal energy to your hand. It costs 0.
+Gain 2 scribe:Drained.</td>
+  </tr>
+  
+  <tr>
+    <td>Echo</td>
+    <td><a href="card-images/Echo.png"><img src="small-card-images/Echo.png" height="298"></a></td>
+    <td><a href="card-images/EchoPlus.png"><img src="small-card-images/EchoPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>Exhaust.
+scribe:Spell_Modifier:
+Gain 1(2) scribe:Additional_Cast(s).</td>
+  </tr>
+  
+  <tr>
+    <td>Escalation</td>
+    <td><a href="card-images/Escalation.png"><img src="small-card-images/Escalation.png" height="298"></a></td>
+    <td><a href="card-images/EscalationPlus.png"><img src="small-card-images/EscalationPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>2</td>
+    <td>(Innate.)
+ For the first scribe:Spell_Effect you play each turn, add an scribe:Echo of that scribe:Spell_Effect to your hand. It costs 0.
+Gain 1 scribe:Drained.</td>
+  </tr>
+  
+  <tr>
+    <td>Focusing Bolt</td>
+    <td><a href="card-images/FocusingBolt.png"><img src="small-card-images/FocusingBolt.png" height="298"></a></td>
+    <td><a href="card-images/FocusingBoltPlus.png"><img src="small-card-images/FocusingBoltPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>scribe:Spell_Effect: Deal !BETTERSPELLATTACK! damage.
+scribe:Spell_Modifier: Gain !SPELLEFFECTIVENESS! % scribe:Spell_Effectiveness.</td>
+  </tr>
+  
+  <tr>
+    <td>Forked Bolt</td>
+    <td><a href="card-images/ForkedBolt.png"><img src="small-card-images/ForkedBolt.png" height="298"></a></td>
+    <td><a href="card-images/ForkedBoltPlus.png"><img src="small-card-images/ForkedBoltPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Add 2(3) scribe:Echoes of random cards that give scribe:Spell_Effect: damage from your deck into your hand.
+They cost 0 this turn.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Glacial Guard</td>
+    <td><a href="card-images/GlacialGuard.png"><img src="small-card-images/GlacialGuard.png" height="298"></a></td>
+    <td><a href="card-images/GlacialGuardPlus.png"><img src="small-card-images/GlacialGuardPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>Cannot be played if you have played an attack this turn.
+(not Cannot be played if you have played an attack this turn.)
+You cannot play additional attacks this turn. Gain 30 Block.</td>
+  </tr>
+  
+  <tr>
+    <td>Inscribe Death</td>
+    <td><a href="card-images/InscribeDeath.png"><img src="small-card-images/InscribeDeath.png" height="298"></a></td>
+    <td><a href="card-images/InscribeDeathPlus.png"><img src="small-card-images/InscribeDeathPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Attack</td>
+    <td>2</td>
+    <td>Deal 24(36) damage to ALL enemies.
+scribe:Spell_Effect: Deal 12 damage to yourself.</td>
+  </tr>
+  
+  <tr>
+    <td>Overexert</td>
+    <td><a href="card-images/Overexert.png"><img src="small-card-images/Overexert.png" height="298"></a></td>
+    <td><a href="card-images/OverexertPlus.png"><img src="small-card-images/OverexertPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>Play a random (not random)card in your hand twice, then Exhaust it. Gain scribe:Drained equal to its cost.</td>
+  </tr>
+  
+  <tr>
+    <td>Recurring Rime</td>
+    <td><a href="card-images/RecurringRime.png"><img src="small-card-images/RecurringRime.png" height="298"></a></td>
+    <td><a href="card-images/RecurringRimePlus.png"><img src="small-card-images/RecurringRimePlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>scribe:Spell_Effect: Gain 6(9) Block.
+scribe:Spell_Modifier: Gain !BETTERSPLIT! scribe:Additional_Cast this turn.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Scripted Starfall</td>
+    <td><a href="card-images/ScriptedStarfall.png"><img src="small-card-images/ScriptedStarfall.png" height="298"></a></td>
+    <td><a href="card-images/ScriptedStarfallPlus.png"><img src="small-card-images/ScriptedStarfallPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>1</td>
+    <td>Retain. Innate. At the end of your turn, deal !SCRIBEM2! damage to ALL enemies.
+Increase the damage by 2(3) for each turn this remains in your hand.</td>
+  </tr>
+  
+  <tr>
+    <td>Scroll of Chaining</td>
+    <td><a href="card-images/ScrollofChaining.png"><img src="small-card-images/ScrollofChaining.png" height="298"></a></td>
+    <td><a href="card-images/ScrollofChainingPlus.png"><img src="small-card-images/ScrollofChainingPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>1</td>
+    <td>At the start of your turn (and when you play this),
+gain 1 scribe:Spell_Modifier: Your spells now target 1 additional enemy.
+Cannot target the same enemy more than once.</td>
+  </tr>
+  
+  <tr>
+    <td>Spectral Scroll</td>
+    <td><a href="card-images/SpectralScroll.png"><img src="small-card-images/SpectralScroll.png" height="298"></a></td>
+    <td><a href="card-images/SpectralScrollPlus.png"><img src="small-card-images/SpectralScrollPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>2</td>
+    <td>You and ALL enemies gain 2(3) Intangible.</td>
+  </tr>
+  
+  <tr>
+    <td>Stem the Flow</td>
+    <td><a href="card-images/StemtheFlow.png"><img src="small-card-images/StemtheFlow.png" height="298"></a></td>
+    <td><a href="card-images/StemtheFlowPlus.png"><img src="small-card-images/StemtheFlowPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>2</td>
+    <td>(Innate.)
+ Whenever you gain a debuff, gain Temporary_HP equal to the amount.
+Stacks diminishingly.</td>
+  </tr>
+  
+  <tr>
+    <td>Time Dilation</td>
+    <td><a href="card-images/TimeDilation.png"><img src="small-card-images/TimeDilation.png" height="298"></a></td>
+    <td><a href="card-images/TimeDilationPlus.png"><img src="small-card-images/TimeDilationPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>1(0)</td>
+    <td>Gain !BETTERDRAINED! scribe:Drained.
+Exhaust.
+Apply Slow.</td>
+  </tr>
+  
+</table>
+  </body>
+</html>
